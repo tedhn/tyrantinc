@@ -6,7 +6,7 @@ import configureAppStore from "./store/configureStore";
 
 const store = configureAppStore();
 
-const App = () => {
+const App : React.FC = () => {
   return <>boilerplate v 1.0</>;
 };
 
