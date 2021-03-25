@@ -2,6 +2,9 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 import i18n from "./locales/i18n";
+import "./App.scss";
+
+import HomePage from "./pages/home";
 
 const App: React.FC = () => {
   const { t } = useTranslation();
@@ -12,9 +15,7 @@ const App: React.FC = () => {
 
   return (
     <>
-      <div>{t("Welcome to React")}</div>
-      <button onClick={() => changeLanguage("de")}>de</button>
-      <button onClick={() => changeLanguage("en")}>en</button>
+      <HomePage />
     </>
   );
 };
