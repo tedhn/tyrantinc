@@ -6,3 +6,52 @@ body {
   box-sizing: border-box;
   overflow-y: none;
 }
+
+.ant-carousel .slick-next {
+  display: flex !important;
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  top: 50%;
+  color: rgb(58, 58, 58) !important;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 50px 100px;
+
+  &:before {
+    content: ">";
+    font-size: 30px;
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+.ant-carousel .slick-prev {
+  display: flex !important;
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  top: 50%;
+  color: rgb(58, 58, 58) !important;
+  justify-content: center;
+  padding: 50px 100px;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  &:before {
+    content: "<";
+    font-size: 30px;
+  }
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  &:hover {
+    color: rgb(58, 58, 58);
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}

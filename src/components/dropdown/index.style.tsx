@@ -8,7 +8,7 @@ export const DropdownWrapper = styled.div`
   height: 0;
   left: 0;
   opacity: 0;
-  z-index: 4;
+  z-index: 5;
 `;
 
 export const Dropdown = styled.div`
@@ -18,6 +18,7 @@ export const Dropdown = styled.div`
   margin: 30px 50px;
   font-size: 16px;
   padding: 5px 10px;
+  opacity : 0;
 
   :hover {
     background: black;

@@ -6,7 +6,7 @@ export const NavWrapper = styled.div`
   align-items: center;
   padding: 5px 50px;
   user-select: none;
-  z-index: 2;
+  z-index: 5;
   width: 100vw;
   background: white;
   position: absolute;

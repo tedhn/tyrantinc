@@ -38,3 +38,24 @@ export const Image3 = styled.div`
   background-position: center;
   background-repeat: no-repeat;
 `;
+export const Back = styled.div`
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  background-color: white;
+  opacity: 0.65;
+  top: 50%;
+  width: 200px;
+  text-align: center;
+`;
+
+export const Next = styled.div`
+  position: absolute;
+  right: 0;
+  z-index: 3;
+  background-color: white;
+  opacity: 0.65;
+  top: 50%;
+  width: 200px;
+  text-align: center;
+`;

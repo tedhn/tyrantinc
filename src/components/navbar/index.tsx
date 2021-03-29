@@ -16,7 +16,7 @@ import anime from "animejs";
 
 const NavComponent = () => {
   const [clicked, setClicked] = React.useState(false);
-  const [section, setSection] = React.useState(0);
+  const [section, setSection] = React.useState({ number: 0, name: "." });
   const timeline = anime.timeline({ easing: "easeInOutExpo", duration: 400 });
 
   React.useEffect(() => {
@@ -27,12 +27,12 @@ const NavComponent = () => {
     });
   }, [clicked, timeline]);
 
-  const handleNavClick = (s: number) => {
-    if (s === section) {
+  const handleNavClick = (n: number, s: string) => {
+    if (n === section.number) {
       setClicked(!clicked);
     } else {
       setClicked(true);
-      setSection(s);
+      setSection({ number: n, name: s });
     }
   };
 
@@ -43,21 +43,21 @@ const NavComponent = () => {
       <CatergoriesWrapper>
         <Catergories
           onClick={() => {
-            handleNavClick(1);
+            handleNavClick(1, ".newArrivals");
           }}
         >
           New Arrivals
         </Catergories>
         <Catergories
           onClick={() => {
-            handleNavClick(2);
+            handleNavClick(2, ".men");
           }}
         >
           Men
         </Catergories>
         <Catergories
           onClick={() => {
-            handleNavClick(3);
+            handleNavClick(3, ".women");
           }}
         >
           Women
